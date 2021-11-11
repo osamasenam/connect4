@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title>Connect Four</title>
+        
+    </head>
+    <body>
+
+        <div id="board">
+
+        </div>
+
+        <!-- <div id="box1"></div>
+        <div id="box2"></div> -->
+
+
+        <div class="overlay">
+            <input id="rowsNum" type="number" placeholder="Enter number of Rows">
+            <input id="coloumnsNum" type="number" placeholder="Enter number of Coloumns">
+            <input id="connect4Win" type="number" placeholder="Enter number of pieces to Win">
+            
+            <label for="mouse">Mouse</label>
+            <input id="mouse" type="radio" name="control" value="mouse">
+            <label for="keyboard">Keyboard</label>
+            <input id="keyboard" type="radio" name="control" value="keyboard">
+
+            <label for="player1Color">Choose player1 color</label>
+            <input id="player1Color" type="color">
+            <label for="player2Color">Choose player2 color</label>
+            <input id="player2Color" type="color">
+            <a href='#' id='start'>Let's Play!</a>
+        </div>
+             
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

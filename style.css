@@ -1,0 +1,135 @@
+
+body {
+    background-color: palevioletred;
+    overflow: hidden;
+}
+
+
+#board {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;    
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 50px solid darkslategray;
+    position: relative;
+    left: -40px;
+    top: -40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: background-color;
+    transition-duration: 100ms;
+}
+
+.player1, .player1Move {
+    background-color: blue;
+}
+
+.player2, .player2Move {
+    background-color: green;
+}
+
+
+.overlay {
+    position: absolute;
+    transform: translateX(0);
+    inset: 0;
+    background-color: darkblue;
+    opacity: 0.5;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    /* grid-template-rows: 50px 50px 50px; */
+    grid-auto-flow: row;
+    font-size: 50px;
+    color: black;
+    
+}
+
+#restart, p {
+    background-color:khaki ;
+   
+}
+
+a {
+    text-decoration: none;
+}
+
+.overlay input {
+    background-color: chartreuse;
+    color: black;
+    font-size: 40px;
+}
+
+.overlay label {
+    background-color: chartreuse;
+    color: black;
+    font-size: 40px;
+    text-align: left;
+}
+
+.overlay a {
+    background-color: chartreuse;
+    color: black;
+    font-size: 50px;
+    width: 30%;
+    border: brown 10px solid;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    
+}
+
+.check4Move {
+    animation-name: check4Move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes check4Move {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+#box1 {
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: royalblue;
+    
+
+}
+
+#box2 {
+    position: absolute;
+    left: 90%;
+    top: 30%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: seagreen;
+    
+    
+}
