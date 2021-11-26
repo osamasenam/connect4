@@ -10,5 +10,3 @@ Connect Four Game
 ![alt text](https://developer-osama.herokuapp.com/connectfour1.png)
 ![alt text](https://developer-osama.herokuapp.com/connectfour2.png)
 ![alt text](https://developer-osama.herokuapp.com/connectfour3.png)
-![alt text](https://developer-osama.herokuapp.com/connectfour4.png)
-![alt text](https://developer-osama.herokuapp.com/connectfour5.png)
